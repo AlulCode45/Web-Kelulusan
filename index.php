@@ -1,79 +1,123 @@
 <?php
 session_start();
-if (isset($_SESSION['nisn'])) {
-    // echo "Anda Tidak Boleh Back";
-}
-
 ?>
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portal Pengumuman Kelulusan - SMKN 4 Bojonegoro</title>
+        <meta name="description" content="Portal resmi pengumuman kelulusan SMK Negeri 4 Bojonegoro." />
+        <link rel="stylesheet" href="portal/assets/theme.css" />
+    </head>
+    <body>
+        <div class="min-h-screen bg-gradient-hero relative overflow-hidden">
+            <div class="absolute top-20 -left-20 w-96 h-96 bg-primary-glow/30 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 -right-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl"></div>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>PORTAL PENGUMUMAN KELULUSAN - SMKN 4 BOJONEGORO</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Custom Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-</head>
-
-<body class="d-flex flex-column h-100">
-    <main class="flex-shrink-0">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-            <div class="container px-5">
-                <a class="navbar-brand w-100" href="index.php"><span class="fw-bolder text-primary">SMKN 4 BOJONEGORO</span></a>
-            </div>
-        </nav>
-        <!-- Header-->
-        <header class="py-5">
-            <div class="d-flex">
-                <img src="assets/logo.png" width="150" class="mx-auto mb-4">
-            </div>
-            <div class="container px-5 pb-5">
-                <!-- Header text content-->
-                <div class="text-center text-md-center">
-                    <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
-                        <div class="text-uppercase">SMKN 4 GO INTERNASIONAL</div>
+            <header class="relative z-10 border-b border-white/10 backdrop-blur-sm">
+                <div class="container mx-auto px-4 py-4 flex items-center gap-3">
+                    <img src="portal/assets/logo-smkn4.png" alt="Logo SMKN 4 Bojonegoro" class="h-12 w-auto" />
+                    <div class="text-primary-foreground">
+                        <p class="text-xs uppercase tracking-widest opacity-80">Pemerintah Provinsi Jawa Timur</p>
+                        <h1 class="text-base md:text-lg font-bold leading-tight">SMK Negeri 4 Bojonegoro</h1>
                     </div>
-                    <div class="fs-1 fw-light text-muted">PENGUMUMAN KELULUSAN</div>
-                    <h1 class="display-6 fw-bolder mb-5"><span class="text-gradient d-inline">SMKN 4 BOJONEGORO TAHUN PELAJARAN 2022/2023</span></h1>
-                    <h1 class="fw-bold">JUM'AT , 05 MEI 2023</h1>
-                    <h1 class="text-gradient d-inline fw-bold">PUKUL 13:00 WIB</h1>
                 </div>
-            </div>
-        </header>
-    </main>
-    <!-- Footer-->
-    <footer class="bg-white py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0">Copyright &copy; SMKN 4 Bojonegoro 2023</div>
-                </div>
-                <div class="col-auto">
-                    <a class="small" href="#!">Privacy</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="#!">Terms</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="#!">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-</body>
+            </header>
 
+            <main class="relative z-10 container mx-auto px-4 py-12 md:py-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                    <div class="text-primary-foreground space-y-6 animate-fade-in-up">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-4 w-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M22 10v6M2 10l10-5 10 5-10 5-10-5Zm4 2.5V16a6 3 0 0 0 12 0v-3.5" />
+                            </svg>
+                            <span>Tahun Pelajaran 2025/2026</span>
+                        </div>
+
+                        <h2 class="text-4xl md:text-6xl font-bold leading-tight">
+                            Portal Pengumuman <span class="text-accent">Kelulusan</span>
+                        </h2>
+
+                        <p class="text-lg opacity-90 max-w-md">
+                            Selamat datang di portal resmi pengumuman kelulusan siswa SMK Negeri 4 Bojonegoro.
+                            Masukkan NISN Anda untuk melihat hasil kelulusan.
+                        </p>
+
+                        <div class="hidden lg:flex items-center gap-6 pt-4">
+                            <img src="portal/assets/logo-smkn4.png" alt="" class="h-32 w-auto animate-float drop-shadow-2xl" />
+                            <div class="space-y-2 text-sm opacity-80">
+                                <p class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-4 w-4 text-accent">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Data resmi & terverifikasi
+                                </p>
+                                <p class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-4 w-4 text-accent">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Pengumuman serentak
+                                </p>
+                                <p class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-4 w-4 text-accent">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Aman & rahasia
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="animate-scale-in">
+                        <div class="bg-gradient-card rounded-2xl p-8 md:p-10 shadow-elegant border border-white/50">
+                            <div class="text-center mb-8">
+                                <div class="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-primary text-primary-foreground mb-4 shadow-glow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-8 w-8">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <path d="m21 21-4.3-4.3"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-foreground">Cek Kelulusan</h3>
+                                <p class="text-muted-foreground mt-2 text-sm">Masukkan Nomor Induk Siswa Nasional (NISN) Anda</p>
+                            </div>
+
+                            <div class="space-y-5">
+                                <a
+                                    href="portal/index.html"
+                                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full h-14 text-base font-semibold transition-smooth shadow-soft hover:shadow-elegant"
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-5 w-5">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <path d="m21 21-4.3-4.3"></path>
+                                    </svg>
+                                    Cek Hasil Kelulusan
+                                </a>
+
+                                <a
+                                    href="admin/login.php"
+                                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full h-14 text-base font-semibold"
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-5 w-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H3m0 0 3-3m-3 3 3 3M11 5h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-2" />
+                                    </svg>
+                                    Admin Panel
+                                </a>
+
+                                <p class="text-xs text-center text-muted-foreground pt-2">
+                                    Pengumuman bersifat resmi. Untuk kendala, hubungi panitia kelulusan sekolah.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="relative z-10 border-t border-white/10 mt-12">
+                <div class="container mx-auto px-4 py-6 text-center text-primary-foreground/70 text-sm">
+                    © <?= date('Y'); ?> SMK Negeri 4 Bojonegoro. Hak Cipta Dilindungi.
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>
